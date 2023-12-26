@@ -32,13 +32,17 @@ ul {
     list-style-type: none;
 }
 
+h2,
+h3 { 
+    line-height: 1;
+}
+
 /* ---- стиль для разметки области страницы ---- */
 .wraper {
     margin: 0 auto;
     max-width: 1200px;
     box-sizing: border-box;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 35px;
 }
 
 .container {
@@ -115,7 +119,7 @@ ul {
 }
 
 .header-title {
-    padding: 100px 20% 130px;
+    padding: 100px 240px 130px;
     font-size: 45px;
     line-height: 1.6;
     text-transform: uppercase;
@@ -261,14 +265,12 @@ ul {
 }
 
 .main {
-    flex-shrink: 1;
-}
-
-.articles {
     display: flex;
     flex-direction: column;
     gap: 54px;
+    flex-shrink: 1;
 }
+
 
 .main__article {
     display: flex;
@@ -409,7 +411,6 @@ ul {
 .time-new-post {
     font-size: 12px;
     font-weight: 400;
-    line-height: 1;
     color: #000000;
     opacity: 0.54;
 }
@@ -562,18 +563,19 @@ ul {
   .product-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: calc((100% - 65px * 2) / 3);
+    align-items: center;
   }
-
+  
   .product-img-container {
-    font-size: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px; 
   }
   
   .product-img {
-    height: 204px;
-    margin: 0 25px; 
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
     background-color: #eff6f1;
   }
   
@@ -581,7 +583,7 @@ ul {
     height: 100%;
     box-sizing: border-box;
     border: 3px solid #b59f5b;
-    padding: 54px 25px 25px;
+    padding: 25px 25px 25px;
     margin-top: -30px;
   }
   
@@ -889,6 +891,11 @@ ul {
       gap: 15px;
       border-bottom: 3px solid #eeeeee;
     }
+
+    .main__article-img-container {
+        width: 100%;
+        min-width: 0px;
+    }
     
     .products {
       gap: 25px;
@@ -910,6 +917,11 @@ ul {
   }
   
   @media (max-width: 640px) {
+    .wraper {
+        padding: 0 15px;
+    }
+    
+    
     .header-primus {
       flex-direction: column-reverse;
       gap: 180px;
