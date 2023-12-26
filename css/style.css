@@ -33,8 +33,10 @@ ul {
 }
 
 h2,
-h3 { 
+h3, 
+h4 { 
     line-height: 1;
+    margin: 0;
 }
 
 /* ---- стиль для разметки области страницы ---- */
@@ -270,7 +272,6 @@ h3 {
     gap: 54px;
     flex-shrink: 1;
 }
-
 
 .main__article {
     display: flex;
