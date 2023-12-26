@@ -36,7 +36,6 @@ h2,
 h3, 
 h4 { 
     line-height: 1;
-    margin: 0;
 }
 
 /* ---- стиль для разметки области страницы ---- */
@@ -298,6 +297,7 @@ h4 {
     margin-left: 1px;
 }
 
+
 .category__item-href {
     font-size: 14px;
     text-transform: uppercase;
@@ -308,6 +308,14 @@ h4 {
 
 .category__item-href:hover {
     text-decoration-line: underline;
+}
+
+.main__article-title {
+    margin: 0;
+}
+
+.title {
+    margin: 0;  
 }
 
 .title-href {
